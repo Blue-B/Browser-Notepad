@@ -1,0 +1,8 @@
+data:text/html,<button onClick="SaveTextArea()">Save</button> <input tpye="text" id = "FileName"  >
+<script language="javascript" type="text/javascript"> 
+function SaveTextArea(fileContents, ChromeMemo) { var link = document.createElement('a');
+    var ChromeMemo = document.getElementById('FileName').value;
+    link.download = ChromeMemo;
+    link.href = 'data:,' + fileContents;
+    link.click();} </script> 
+<textarea id="txtBody" style="font-size: 1.5em; width: 100%; height: 100%; boarder: none; outline: none" autofocus> </textarea>
